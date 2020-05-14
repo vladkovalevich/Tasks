@@ -1,0 +1,21 @@
+﻿<Window x:Class="Tasks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tasks"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <Grid>
+        <StackPanel HorizontalAlignment="Left">
+            <TextBlock  Text="INPUT.TXT" />
+            <TextBox AcceptsReturn="True" x:Name="_InputStr" TextWrapping="Wrap" Height="100" Width="400" />
+            <TextBlock Text="OUTPUT.TXT" />
+            <TextBox AcceptsReturn="True" x:Name="_OutputStr" IsEnabled="False" TextWrapping="Wrap" Height="100" Width="400"/>
+            <Button Content="Task1" Name="_Task1" Click="_Task1_Click" />
+        </StackPanel>
+        
+        
+    </Grid>
+</Window>
